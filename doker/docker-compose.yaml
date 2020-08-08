@@ -12,7 +12,7 @@ environment:
     - MEMCACHED_PASSWORD=password123
         depends_on:
             - memcached
-    memcached:
-        image: bitnami/memcached
+        memcached:
+         image: memcached:1.5.22-alpine
         ports:
             - "11211:11211"
